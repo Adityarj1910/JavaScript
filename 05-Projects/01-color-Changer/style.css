@@ -17,16 +17,28 @@ html {
     border: solid black 2px;
     display: inline-block;
   }
-  
-  #grey {
-    background: grey;
+  .reset{
+    margin: 20px auto 100px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  .reset-button{
+    height: 30px;
+    width: 100px;
+    border: solid black 4px;
+    display: inline-block;
   }
   
-  #white {
-    background: white;
+  #red {
+    background: red;
   }
+  
   #blue {
     background: blue;
+  }
+  #green {
+    background: green;
   }
   #yellow {
     background: yellow;
