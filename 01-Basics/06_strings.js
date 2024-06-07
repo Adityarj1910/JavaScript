@@ -11,7 +11,7 @@ const gameName = new String('Aditya-Raj') // this will create an object
 // console.log(gameName[0]);
 // console.log(gameName[1]);
 //and we can access all of the methods as normal
-// console.log(gameName.__proto__); //give the object
+console.log(gameName.__proto__); //give the object
 
 
 //-- the best way to get to know about something is goto console of the webpage -- 
@@ -37,9 +37,9 @@ url.replace(" ",'-') //does not modify the original string
 // console.log(url); 
 // console.log(url.replace(" ",'-'));
 
-console.log(url.includes("aditya")); //checks weather a subtring is icnluded in the string
+// console.log(url.includes("aditya")); //checks weather a subtring is icnluded in the string
 // console.log(url.includes("rajeev"));
 
-console.log(gameName.split('-')) //splits the string into array based on a pattern or a substring
+// console.log(gameName.split('-')) //splits the string into array based on a pattern or a substring
 
 

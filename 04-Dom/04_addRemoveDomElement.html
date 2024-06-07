@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or Remove DOM Elements</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //adding...
+    function addLang(langName) {
+        const item = document.createElement('li');
+        item.style.color = 'white';
+        item.innerText = langName;
+        document.querySelector('.lang').appendChild(item);
+    }
+    addLang("Python")
+    addLang("C++")
+
+    function addLang2(langName) { //optimised
+        const item = document.createElement('li');
+        item.appendChild(document.createTextNode(langName));
+        document.querySelector('.lang').appendChild(item);
+    }
+    addLang('Typescript');
+
+    //editing...
+
+    const secLang = document.querySelector("li:nth-child(2)");
+    secLang.innerHTML = 'Py';
+    
+    //or
+
+    const newLi = document.createElement('li')
+    newLi.textContent ='Java';
+    secLang.replaceWith(newLi);
+
+    //or
+
+    const editLang = document.querySelector("li:last-child");
+    editLang.outerHTML = '<li>BhaiLang</li>'
+
+    // removing...
+
+    const li = document.querySelector("li:nth-child(2)");
+    // console.log(li);
+    li.remove();
+</script>
+</html>
