@@ -1,9 +1,9 @@
 # Projects Related to DOM
 
-## Project Link
+## Project Preview
 [Click Here](https://githubbox.com/Adityarj1910/JavaScript/tree/main/05-Projects)
 
-# script Codes
+# Script Codes
 
 ## Project 1 - Color Changer
 
