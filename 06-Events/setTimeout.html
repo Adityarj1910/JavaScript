@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project with Async</title>
+</head>
+<body>
+    <h1>Project with Async</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(() =>{
+    //     console.log("Aditya Raj") ;
+    // }, 4000);
+
+    const changeText = () =>{
+        document.querySelector('h1').innerHTML = "JavaScript => Prject with Async"
+    }
+    const changeMe  = setTimeout(changeText, 5000);
+
+    // clearTimeout(changeMe);
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        console.log('stop');
+        clearTimeout(changeMe);
+    },false);
+</script>
+</html>

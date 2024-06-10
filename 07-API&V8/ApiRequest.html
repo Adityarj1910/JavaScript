@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h3>XMLHttpRequest readyStateProperty</h3>
+0 ) UNSENT	Client has been created. open() not called yet. <br>
+1 ) OPENED	open() has been called. <br>
+2 )	HEADERS_RECEIVED	send() has been called, and headers and status are available. <br>
+3 )	LOADING	Downloading; responseText holds partial data. <br>
+4 )	DONE	The operation is complete.
+</body>
+
+<script>
+    const requestURL = 'https://api.github.com/users/adityarj1910' //converted to string
+    const xhr = new XMLHttpRequest(); // an object to create a new http xml request
+    xhr.open('GET', requestURL)// state 1 => open but not called yet
+
+    // console.log(xhr.readyState); // to see the readyState but only once.
+
+    xhr.onreadystatechange = function() {
+        console.log(xhr.readyState); // this will track the ready state when state is changed
+        if(xhr.readyState === 4){
+            // console.log(this.responseText);// or we can hold this val in a variable and can acesss them
+            const data = JSON.parse(this.responseText);
+            console.log(data.login); 
+        }
+    }
+
+    xhr.send() //state 2 => send has been called
+</script>
+</html>
