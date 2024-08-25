@@ -1,13 +1,14 @@
 *{
-  background-color: #1c1c1c;
-  color: #ffffff;
+
 }
 .project{
+  background-color: #1c1c1c;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 90vh;
+  height: 94.5vh;
 }
 
 table,th,td{
