@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Aditya Raj</h1>
+  <button id="stop">stop</button>
+  
+</body>
+<script>
+
+  /*
+  setTimeout(()=>{ //this funtion executes after a time interval only once;
+    console.log("Aditya") // setTimeof( handler (funtion/ reference etc..), duration in ms)
+  },2000);
+  */
+
+
+  //changing the HTML after 2 sec using setTimeout
+  //  use case: like a pop that comes on a website after a few time like pop ups and all.
+  const changeMe = ()=>{
+    document.querySelector("h1").innerHTML = "RAJ ADITYA"
+  }
+  const changeTimeout = setTimeout(changeMe, 2000);
+  
+
+  //but what if we dont want that pop up to show after a particualr time - we use clearTimeout(reference to the setTimeout)
+  const clear = function(){
+    clearTimeout(changeTimeout);
+    console.log("Stopped");
+  }
+  document.querySelector("#stop").addEventListener("click" , clear);
+
+</script>
+</html>

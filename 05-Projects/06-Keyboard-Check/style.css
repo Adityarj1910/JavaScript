@@ -1,0 +1,22 @@
+*{
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+table,th,td{
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  }
+
+.color{
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+}
